@@ -1,4 +1,4 @@
-# SIM ONLY support (hardware support tbd)
+# SIM ONLY support
 
 **Sim-only mecanum-drive robot** (WPILib and PyFRC).
 
@@ -11,5 +11,3 @@
 ## Future:
 - Hardware support
 - Better physics
-- Elevator support?
-- Arm support?
