@@ -8,9 +8,6 @@ kMaxSpeed = 3.0  # 3 meters per second
 kMaxAngularSpeed = math.pi  # 1/2 rotation per second
 
 class Drivetrain:
-    """
-    Represents a swerve drive style drivetrain.
-    """
 
     def __init__(self) -> None:
         self.frontLeftLocation = wpimath.geometry.Translation2d(0.381, 0.381)
@@ -84,4 +81,5 @@ class Drivetrain:
                 self.backLeft.getPosition(),
                 self.backRight.getPosition(),
             ),
+
         )
