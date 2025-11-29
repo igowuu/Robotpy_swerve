@@ -1,16 +1,21 @@
-# SIM ONLY support
+# NO sim support (yet)
 
-**Sim-only mecanum-drive robot** (WPILib and PyFRC).
+**Swervebot**.
 
-## Mecanum:
-- **Mecanum Drive**: 4 brushless motors (NEO) via SparkMax  
-- **Sensors**: Gyro, limit switches, position sensor  
-- **Actuator**: Linear actuator with limit detection  
-- **Physics**: Wheel kinematics, chassis movement, gyro update
-
-## Swerve:
-- **WIP**
+## SwerveGEARious Hardware:
+- 4 Falcon swerve modules (CANCoder steering sensors) (✓)
+- Amazingly programmed TimedRobot state-of-the-art architecture (✓)
+- Swerve full driving support (✓)
+- Dual-motor elevator (X)
+- Hinge-based claw with roller intake (X)
+- Single-motor climber (X)
+- Two AprilTag cameras (X)
+- Vision-based auto-alignment & scoring offsets (X)
+- LED feedback animations (X)
 
 ## Future:
-- Hardware support
-- Better physics
+- Physics for wpilib sim
+- Constants JSON
+- Autonomous
+- Arm
+- Elevator
