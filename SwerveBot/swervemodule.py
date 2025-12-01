@@ -16,7 +16,7 @@ DRIVE_kP = 0.6
 DRIVE_kI = 0.0
 DRIVE_kD = 0.0
 
-TURN_kP = 4.0
+TURN_kP = 3.0
 TURN_kI = 0.0
 TURN_kD = 0.0
 
@@ -25,7 +25,7 @@ DRIVE_kV = 0.104
 DRIVE_kA = 0.01
 
 TURN_kS = 0.14
-TURN_kV = 0.0
+TURN_kV = 0.375
 TURN_kA = 0.0
 
 class SwerveModule:
@@ -91,5 +91,6 @@ class SwerveModule:
         turn_voltage = turn_output + turn_feedforward
 
         self.drive_motor.setVoltage(drive_voltage)
+
 
         self.steer_motor.setVoltage(turn_voltage)
