@@ -15,38 +15,11 @@ class MyRobot(wpilib.TimedRobot):
         self.yspeedLimiter = wpimath.filter.SlewRateLimiter(3)
         self.rotLimiter = wpimath.filter.SlewRateLimiter(3)
 
-        self.xSpeed = 0
-        self.ySpeed = 0
-        self.rot = 0
-
     def autonomousInit(self):
-        self.timer = wpilib.Timer()
-        self.timer.start()
-        self.currentStep = 0
-        self.sideTime = 0.1
+        pass
 
     def autonomousPeriodic(self):
-        self.xSpeed = 0
-        self.ySpeed = 0
-        self.rot = 0
-
-        t = self.timer.get()
-        totalTime = 4 * self.sideTime
-
-        t_mod = t % totalTime
-
-        if t_mod < self.sideTime:
-            self.xSpeed = 0
-            self.ySpeed = 50
-        elif t_mod < 2*self.sideTime:
-            self.xSpeed = 50
-            self.ySpeed = 0
-        elif t_mod < 3*self.sideTime:
-            self.xSpeed = 0
-            self.ySpeed = -50
-        else:
-            self.xSpeed = -50
-            self.ySpeed = 0
+        pass
 
     def teleopPeriodic(self) -> None:
         self.driveWithJoystick(True)
@@ -76,4 +49,5 @@ class MyRobot(wpilib.TimedRobot):
         
 
         self.drivetrain.drive(self.xSpeed, self.ySpeed, self.rot, fieldRelative, self.getPeriod())
+
 
