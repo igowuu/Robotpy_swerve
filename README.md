@@ -12,8 +12,7 @@
 - LED feedback animations (X)
 
 ## Future:
-- Constants storage (?)
 - Autonomous
 - Arm
 - Elevator
-- Vision
+- AprilVision
