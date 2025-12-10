@@ -20,13 +20,14 @@ class DriveTrain:
         ]
 
         self.modules = [
-            SwerveModule(1, 5, 9),  # front left
-            SwerveModule(2, 6, 10),   # front right
-            SwerveModule(3, 7, 11),  # back left
-            SwerveModule(4, 8, 12)   # back right
+            SwerveModule(21, 22, 23),  # front left
+            SwerveModule(31, 32, 33),  # front right
+            SwerveModule(11, 12, 13),  # back left
+            SwerveModule(41, 42, 43)   # back right
         ]
+        
+        self.gyro = Pigeon2(30, canbus="can0")
 
-        self.gyro = Pigeon2(13, canbus="can0")
         self.gyro.reset()
 
         self.kinematics = SwerveDrive4Kinematics(*self.module_locations)
@@ -89,4 +90,5 @@ class DriveTrain:
             ) * MAX_OMEGA_PS
         )
         
+
         self.drive(self.xSpeed, self.ySpeed, self.omega)
