@@ -25,23 +25,8 @@ MagicBot is currently in use for our program, but other modules like TimedRobot 
 - Gyro + odometry updated in simulation
 - Realistic motion tracking using ChassisSpeeds
 
-## Code Structure
-
-```
-robot.py          – MagicBot robot container
-drivetrain.py     – Swerve drive system (kinematics/odometry)
-swervemodule.py   – Swerve module control (drive + steer)
-physics.py        – PyFRC physics simulation engine
-```
-
 ## Requirements
-requirements.txt is included, though it has quite a few more packages than necessary. The needed resources are the following:
-
-- Python 3.10+
-- RobotPy WPILib
-- robotpy-ctre (Phoenix 6)
-- robotpy-halsim + pyfrc (for simulation)
-- Proper CAN configuration for real hardware
+requirements.txt is included for all packages.
 
 ## Test Code
 
